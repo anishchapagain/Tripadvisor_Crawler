@@ -16,15 +16,17 @@ urls=[
 ]
 
 #FROM - TO - Historical Dates
+RUN_DATE=str(datetime.date.today())
 FROM = '2022/01/01'
 TO = '2022/12/01'
 RAW_DETAIL_CSV = 'Historic_'+RUN_DATE+'.csv' #sample file
+
+RAW_FILE_CSV = 'Historic_.csv' #sample file
 
 BASE_URL='https://www.tripadvisor.com'
 PAUSEMIN=3
 PAUSEMAX=8
 
-RUN_DATE=str(datetime.date.today())
 
 #Column Headers
 COL_DETAIL=["url", "total_reviews", "review_id", "user","user_review_count","review_date","review_rating","review_url","review_title","review_text","user_visited_date","user_location"]
@@ -109,10 +111,10 @@ def loadDocument(url,referer,businessId):#useragent: rotate
     for count,page in enumerate(pages):
         """
         TEST 
-        """
+        
         if count>5:
             break        
-        
+        """
         print("Loading Page...",count+1," -- ",page)#log
         pause()
         headersValue ={
@@ -207,7 +209,7 @@ def loadDocument(url,referer,businessId):#useragent: rotate
             if check[0]:                
                 reviews.append([url,no_of_reviews,id,user,user_review,formatted_review_date,review_rating,review_url,review_title,review_text,stay_date,user_location])
                 #write every passed row to CSV
-                writeto_csv(reviews,COL_DETAIL,RAW_DETAIL_CSV)
+                writeto_csv(reviews,COL_DETAIL,RAW_FILE_CSV.replace('_',businessId))
                 #print(review_text)
             else:
                 break
@@ -221,9 +223,11 @@ if __name__=="__main__":
         if'.com' in url:
             BASE_URL = 'https://www.tripadvisor.com'
         
+        FILE_ID = re.findall(r".*(\-g[a-z0-9]+\-d[a-z0-9]+)\-",url,re.MULTILINE | re.IGNORECASE)[0]
+        print(FILE_ID)
         reviews=[]
         showTime("URL Start")
-        loadDocument(url,'','')
+        loadDocument(url,'',FILE_ID)
         # print(reviews)
         showTime("URL End")
     showTime("Ending")
