@@ -9,3 +9,10 @@ https://www.tripadvisor.com/GMapsLocationController?Action=update&from=Neighborh
 &validDates=true&mc=51.50694630468308,-0.09819649999999402&mz=12&mw=1560&mh=426&pinSel=v2&origLocId=186338&finalRequest=false&includeMeta=true&trackPageView=true
 
 https://cdn.cookielaw.org/vendorlist/iabData.json
+
+if (type === 'default') {
+        url = `https://api.grepsr.com/v1/proxy/list?x-api-key=api_grep_sr_iH5xNxaYgoUbHZxPOf4cXsDrlbpx7XVq&limit=${number}`;
+}
+ if (type === 'best') {
+     url = `https://api.grepsr.com/v1/proxy/list?x-api-key=api_grep_sr_iH5xNxaYgoUbHZxPOf4cXsDrlbpx7XVq&limit=${number}&provider=BESTPROXIES`;
+ }
