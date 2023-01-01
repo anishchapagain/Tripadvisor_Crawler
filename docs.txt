@@ -1,0 +1,11 @@
+UK: 186338
+https://www.tripadvisor.com/Restaurants-g186338-London_England.html
+
+https://www.tripadvisor.com/GMapsLocationController?Action=update&from=&g=186338&geo=186338&mapProviderFeature=ta-maps-gmaps4
+&validDates=true&mc=51.50694630468308,-0.09819649999999402&mz=&mw=1560&mh=426&pinSel=v2&origLocId=186338&finalRequest=false
+&includeMeta=true&trackPageView=true
+
+https://www.tripadvisor.com/GMapsLocationController?Action=update&from=NeighborhoodList&g=186338&geo=186338&mapProviderFeature=ta-maps-gmaps4
+&validDates=true&mc=51.50694630468308,-0.09819649999999402&mz=12&mw=1560&mh=426&pinSel=v2&origLocId=186338&finalRequest=false&includeMeta=true&trackPageView=true
+
+https://cdn.cookielaw.org/vendorlist/iabData.json
