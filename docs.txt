@@ -19,3 +19,5 @@ if (type === 'default') {
 
 https://shweta-lodha.medium.com/how-to-schedule-a-python-script-b0e0652f349c
 https://medium.com/pythoneers/take-5-minutes-to-get-started-with-multi-threading-in-python-ce735a46663d
+https://andrewpwheeler.com/2021/07/10/creating-automated-reports-using-python-and-jupyter-notebooks/
+https://curlconverter.com/python/
