@@ -21,3 +21,7 @@ https://shweta-lodha.medium.com/how-to-schedule-a-python-script-b0e0652f349c
 https://medium.com/pythoneers/take-5-minutes-to-get-started-with-multi-threading-in-python-ce735a46663d
 https://andrewpwheeler.com/2021/07/10/creating-automated-reports-using-python-and-jupyter-notebooks/
 https://curlconverter.com/python/
+https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/main/chapter-02/spam-detection.ipynb
+https://datos.gob.es/en/blog/data-products-graphq
+https://www.confessionsofadataguy.com/category/machine-learning/
+https://developers.ideonapi.com/session
