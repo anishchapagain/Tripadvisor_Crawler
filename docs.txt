@@ -25,3 +25,22 @@ https://github.com/PacktPublishing/Machine-Learning-Techniques-for-Text/blob/mai
 https://datos.gob.es/en/blog/data-products-graphq
 https://www.confessionsofadataguy.com/category/machine-learning/
 https://developers.ideonapi.com/session
+
+curl 'https://in.hotjar.com/api/v2/client/sites/1260748/visit-data?sv=6' \
+  -H 'authority: in.hotjar.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: text/plain; charset=UTF-8' \
+  -H 'origin: https://www.beatone.co.uk' \
+  -H 'pragma: no-cache' \
+  -H 'referer: https://www.beatone.co.uk/' \
+  -H 'sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36' \
+  --data-raw '{"r_value":1,"is_vpv":false,"session_only":false,"rec_value":0.03448275862068965,"user_id":"550f9f3e-1d91-5aad-b8ab-dd03200926f0"}' \
+  --compressed
